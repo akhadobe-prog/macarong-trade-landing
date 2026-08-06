@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('components/header.html')
       .then(response => response.text())
       .then(data => {
-        headerPlaceholder.innerHTML = data;
+        document.getElementById('header-placeholder').innerHTML = data;
       });
   }
 
